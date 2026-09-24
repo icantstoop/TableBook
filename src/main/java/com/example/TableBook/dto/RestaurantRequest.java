@@ -1,16 +1,12 @@
 package com.example.TableBook.dto;
 
 import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import java.time.LocalTime;
 
 @Getter
 @Setter
-@Builder
 public class RestaurantRequest {
     @NotBlank
     String name;

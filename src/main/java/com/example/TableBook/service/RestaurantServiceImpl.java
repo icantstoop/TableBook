@@ -6,13 +6,8 @@ import com.example.TableBook.entity.Restaurant;
 import com.example.TableBook.exception.RestaurantNotFoundException;
 import com.example.TableBook.repository.RestaurantRepository;
 import lombok.RequiredArgsConstructor;
-import org.springframework.data.crossstore.ChangeSetPersister;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
 
-import javax.management.relation.RelationServiceNotRegisteredException;
-import javax.swing.plaf.basic.BasicInternalFrameTitlePane;
 import java.util.List;
 import java.util.stream.Collectors;
 

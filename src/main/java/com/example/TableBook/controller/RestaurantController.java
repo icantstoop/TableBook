@@ -2,7 +2,6 @@ package com.example.TableBook.controller;
 
 import com.example.TableBook.dto.RestaurantRequest;
 import com.example.TableBook.dto.RestaurantResponse;
-import com.example.TableBook.entity.Restaurant;
 import com.example.TableBook.service.RestaurantService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -27,8 +26,8 @@ public class RestaurantController {
         return ResponseEntity.ok(restaurantService.findById(id));
     }
 
-    @PostMapping(value = "/api/v1/restaurants/{id}")
-    public ResponseEntity<RestaurantResponse> create(@Valid @PathVariable RestaurantRequest request){
+    @PostMapping(value = "/api/v1/restaurants")
+    public ResponseEntity<RestaurantResponse> create(@Valid @RequestBody RestaurantRequest request){
         RestaurantResponse restaurant = restaurantService.create(request);
         return ResponseEntity.status(HttpStatus.CREATED).body(restaurant);
     }

@@ -6,9 +6,9 @@ import com.example.TableBook.dto.RestaurantResponse;
 import java.util.List;
 
 public interface RestaurantService {
-    public List<RestaurantResponse> findAll();
-    public RestaurantResponse findById(Long id);
-    public RestaurantResponse create(RestaurantRequest request);
-    public RestaurantResponse update(Long id, RestaurantRequest request);
-    public void delete(Long id);
+    List<RestaurantResponse> findAll();
+    RestaurantResponse findById(Long id);
+    RestaurantResponse create(RestaurantRequest request);
+    RestaurantResponse update(Long id, RestaurantRequest request);
+    void delete(Long id);
 }
