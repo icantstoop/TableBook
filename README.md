@@ -16,10 +16,10 @@ Java 17, Spring Boot, Spring Data JPA, PostgreSQL, Flyway, Lombok, Maven
 ## Основные эндпоинты
 
 
- GET, POST - `/api/v1/restaurants` - список и создание ресторанов 
- GET, POST - `/api/v1/tables` - список и создание столиков 
- POST - `/api/v1/auth/register` - регистрация 
- POST - `/api/v1/bookings` - создать бронь 
+ - GET, POST - `/api/v1/restaurants` - список и создание ресторанов 
+ - GET, POST - `/api/v1/tables` - список и создание столиков 
+ - POST - `/api/v1/auth/register` - регистрация 
+ - POST - `/api/v1/bookings` - создать бронь 
 
 Пример брони:
 
