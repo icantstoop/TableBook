@@ -27,7 +27,7 @@ public class AuthServiceImpl implements AuthService {
         User user = User.builder()
                 .username(request.getUsername())
                 .email(request.getEmail())
-                .password(request.getPassword())
+                .password(request.getPassword()) // пароль шифровать не буду, т.к. проект для себя
                 .role(Role.CLIENT)
                 .build();
 
